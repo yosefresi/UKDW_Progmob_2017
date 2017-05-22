@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10sp"
+    android:paddingTop="10sp"
+    android:weightSum="1">
+
+    <QuickContactBadge
+        android:id="@+id/quickContactBadge3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="0.07"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/txtNamaComment"
+        android:layout_width="150dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="7dp"
+        android:layout_weight="0.33"
+        android:text="Nama Orang"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/quickContactBadge3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtIsiComment"
+        android:layout_width="256dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="15dp"
+        android:text="Komen"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/quickContactBadge3"
+        app:layout_constraintTop_toBottomOf="@+id/txtNamaComment" />
+
+</android.support.constraint.ConstraintLayout>
